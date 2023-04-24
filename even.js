@@ -14,3 +14,16 @@ true
 
 console.log(elevenIsEven);
 false
+
+  // same result as above:
+  
+const isEven  = function (num) {
+...   return num % 2 === 0;
+... }
+SyntaxError: Identifier 'isEven' has already been declared
+
+console.log(isEven(10));
+true
+
+console.log(isEven(11));
+false
